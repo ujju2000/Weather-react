@@ -1,0 +1,108 @@
+*{
+    margin : 0px;
+    padding : 0px;
+
+}
+.app {
+    position : absolute;
+    top:10%;
+    left : 20%;
+    height : 600px;
+    width : 50%;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: auto;
+    padding : 20px;
+    box-shadow: -1px -2px 15px 0px rgba(0,0,0,0.75);
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title {
+    align-self: left;
+    font-size: 50px;
+    text-align: left;
+    color : red;
+    
+}
+.logo {
+    align-self: center;
+    height : 200px;
+    width : 200px;
+}
+.cityInput {
+    margin-left: 12%;
+    height : 30px;
+    width : 70%;
+    border-radius: 20px;
+    border : none;
+    font-size : 25px;
+    padding : 10px;
+}
+
+
+.bottom {
+    height : 250px;
+    width : 30%;
+    margin : auto;
+    background  : transparent;
+    color : white;
+    background-color: rgba(0, 255, 255, 0.444);
+    box-shadow: -1px -2px 15px 0px rgba(0,0,0,0.95);
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding : 10px;
+}
+
+.bottom .title {
+    font-size : 30px;
+}
+
+.desc {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temp,.min_max {
+    font-size : 20px;
+    text-transform: capitalize;
+    color : darkgreen
+}
+
+
+
+@media screen and (max-width : 500px) {
+
+    .top {
+        flex-direction: column;
+    }
+    .logo {
+        height : 100px;
+        width : 100px;
+    }
+    .title {
+        font-size : 30px;
+    }
+    .app {
+        left : 10%;
+       top : 3%;
+       width : 70%;
+         font-size : 25px; 
+        background: none; 
+        box-shadow: none;
+    }
+    .cityInput {
+        margin-top: 10px;
+        height : 20%;
+    }
+    .bottom {
+        width : 80%;
+    }
+}
